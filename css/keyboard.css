@@ -1,0 +1,196 @@
+.keyboard{
+    margin-bottom: 10px;
+    max-width: 767px;
+    padding: 10px 5px;
+    /* background-color: #4cbefa; */
+    background-color: #3cb2f1;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    gap: 5px;
+    margin-bottom: 7px;
+    justify-content: center;
+}
+.row-item{
+    text-align: center;
+    border-radius: 5px;
+    text-align: center;
+    width: 47px;
+    height: 47px;
+    line-height: 47px;
+    transition: transform .1s ease;
+}
+.row-item:hover{
+    transform: scale(0.9);
+}
+.larr, .enter, .shiftr{
+    padding-right: 10px;
+}
+.caps, .tab, .shiftl{
+    padding-left: 10px;
+}
+.larr{
+    text-align: right;
+    width: 75px;
+}
+.tab{
+    text-align: left;
+    width: 75px;
+}
+.caps, .enter{
+    width: 88px;
+}
+.caps{
+    text-align: left;
+}
+.enter{
+    text-align: right;
+}
+.shiftl, .shiftr{
+    width: 115px;
+}
+.shiftl{
+    text-align: left;
+}
+.shiftr{
+    text-align: right;
+}
+.space{
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 412px;
+    height: 40px;
+    background-color: blanchedalmond;
+}
+.dark-blue{
+    background-color: #9ad3fa;
+    /* 9ad3fa */
+}
+.green{
+    background-color: #78e2aa;
+}
+.blue{
+    background-color: #63e3ff;    
+}
+.pink{
+    background-color: #f69ec4;
+}
+.orange{
+    background-color: #ffc07e;
+}
+.yellow{
+    background-color: #ffef7e;
+}
+.error{
+    background-color: rgb(255, 55, 55);
+}
+.current{
+    border: 2px solid var(--color-white);
+    box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.8);
+}
+.none{
+    display: none;
+}
+.hands{
+    position: absolute;
+    z-index: 2;
+    top: 120px;
+    left: 395px;
+    opacity: 0.7;
+}
+@media screen and (min-width:1500px){
+    .hands{
+        left: 420px;
+    }
+}
+@media screen and (max-width:1436px){
+    .hands{
+        left: 380px;
+    }
+}
+@media screen and (max-width:1400px){
+    .hands{
+        left: 350px;
+    }
+}
+@media screen and (max-width:1358px){
+    .hands{
+        left: 330px;
+    }
+}
+@media screen and (max-width:1308px){
+    .hands{
+        left: 300px;
+    }
+}
+@media screen and (max-width:1246px){
+    .hands{
+        left: 275px;
+    }
+}
+@media screen and (max-width:1196px){
+    .hands{
+        left: 255px;
+    }
+}
+@media screen and (max-width:1156px){
+    .hands{
+        left: 235px;
+    }
+}
+@media screen and (max-width:1115px){
+    .hands{
+        left: 215px;
+    }
+}
+@media screen and (max-width:1076px){
+    .hands{
+        left: 195px;
+    }
+}
+@media screen and (max-width:1036px){
+    .hands{
+        left: 175px;
+    }
+}
+@media screen and (max-width:990px){
+    .hands{
+        left: 150px;
+    }
+}
+@media screen and (max-width:950px){
+    .hands{
+        left: 130px;
+    }
+}
+@media screen and (max-width:910px){
+    .hands{
+        left: 110px;
+    }
+}
+@media screen and (max-width:870px){
+    .hands{
+        left: 90px;
+    }
+}
+@media screen and (max-width:830px){
+    .hands{
+        left: 70px;
+    }
+}
+@media screen and (max-width:790px){
+    .hands{
+        left: 50px;
+    }
+}
+@media screen and (max-width:768px){
+    .keyboard{
+        display: none;
+    }
+    .hands{
+        display: none;
+    }
+}

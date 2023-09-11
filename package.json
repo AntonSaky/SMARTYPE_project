@@ -1,0 +1,35 @@
+{
+  "name": "smartype",
+  "version": "1.0.0",
+  "description": "Key printing trianer",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open"
+  },
+  "author": "Anton Sakovsky <anton.sakovsky@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
+    "babel-loader": "^9.1.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-copy-plugin": "^0.0.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "firebase": "^10.3.1",
+    "normalize.css": "^8.0.1"
+  },
+  "browserslist": "> 0.25%, not dead"
+}

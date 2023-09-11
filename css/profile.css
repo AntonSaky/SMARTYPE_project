@@ -1,0 +1,306 @@
+.profile-main{
+    background-color: var(--color-white);
+    border-radius: 10px;
+    padding: 30px 40px;
+    position: relative;
+}
+.log-out{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.log-out i{
+    color: red;
+    margin-right: 3px;
+}
+.profile-header{
+    display: flex;
+    margin-bottom: 40px;
+}
+.user-img{
+    width: 150px;
+    margin-right: 20px;
+}
+.user-img img{
+    width: 100%;
+}
+.user-name{
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: var(--color-black);
+}
+.user-best-stats{
+    display: flex;
+    width: 700px;
+    justify-content: space-around;
+    align-items: center;
+}
+.stats-item{
+    display: flex;
+    align-items: center;
+}
+.stats-item-icon{
+    font-size: 40px;
+    margin-right: 10px;
+}
+.stats-item-icon.progress{
+    color: greenyellow;
+    font-size: 40px;
+}
+.stats-item-icon.speed{
+    color: rgb(222, 111, 130);
+    font-size: 40px;
+}
+.stats-item-icon.accuracy{
+    color: red;
+    font-size: 40px;
+}
+.stats-item-descr{
+    text-align: center;
+}
+.stats-item-title{
+    color: var(--color-black);
+    font-size: 18px;
+    font-weight: bold;
+}
+.stats-item-descr span{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-nav{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.profile-nav-link{
+    margin-right: 10px;
+    text-decoration: none;
+    color: var(--color-black);
+    padding: 10px 20px;
+}
+.profile-nav-link:hover{
+    background-color: rgb(242, 242, 242);
+}
+.profile-nav-link.curr{
+    color: red;
+}
+
+/* Profile levels */
+.profile-levels-item{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: var(--color-black);
+    padding: 15px 10px;
+}
+.profile-levels-item:hover{
+    background-color: rgb(242, 242, 242);
+}
+.profile-level-name{
+    margin-right: 100px;
+    font-weight: bold;
+}
+.stat{
+    margin-right: 20px;
+}
+.stat span{
+    font-weight: bold   ;
+}
+.profile-level-time i{
+    color: yellowgreen;
+}
+.profile-level-speed i{
+    color: rgb(222, 111, 130);
+}
+.profile-level-accuracy i{
+    color: red;
+}
+.level-stats-wrap{
+display: flex;
+}
+/* Profile levels end */
+
+/* Profile tests */
+.profile-tests-item{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: var(--color-black);
+    padding: 15px 10px;
+}
+.profile-tests-item:hover{
+    background-color: rgb(242, 242, 242);
+}
+.user-test-info{
+    display: flex;
+}
+.profile-test-number{
+    margin-right: 10px;
+    font-weight: bold;
+}
+.stats-wrap{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+.profile-test-speed i{
+    color: rgb(222, 111, 130);
+}
+.profile-test-accuracy i{
+    color: red;
+}
+/* Profile tests end */
+
+/* Profile rating */
+.profile-rating-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 700px;
+    font-size: 18px;
+    color: var(--color-black);
+    padding: 15px 10px;
+}
+.profile-rating-item:hover{
+    background-color: rgb(242, 242, 242);
+}
+.profile-rating-speed i{
+    color: rgb(222, 111, 130);
+}
+.profile-rating-accuracy i{
+    color: red;
+}
+.rating-user-info{
+    display: flex;
+}
+.profile-rating-position{
+    margin-right: 10px;
+}
+.me{
+    background-color: #dbf0fd !important;
+}
+/* Profile rating end */
+
+@media (max-width:1041px) {
+    .user-best-stats{
+        width: 500px;
+    }
+    .stats-item{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 767px){
+    .profile-level-name{
+        margin-right: 50px;
+    }
+    .user-img{
+        width: 120px;
+    }
+    .user-name{
+        font-size: 26px;
+    }
+    .stats-item-icon{
+        font-size: 34px;
+    }
+    .stats-item-title{
+        font-size: 16px;
+    }
+    .stats-item-descr span{
+        font-size: 20px;
+    }
+    .profile-main{
+        padding: 20px;
+    }
+    .log-out{
+        top: 20px;
+        right: 20px;
+    }
+    .profile-rating-item{
+        width: 100%;
+    }
+}
+@media (max-width:700px){
+    .user-img{
+        display: none;
+    }
+    .user-best-stats{
+        justify-content: space-between;
+    }
+    .profile-levels-item{
+        display: block;
+    }
+    .profile-level-name{
+        margin-bottom: 10px;
+    }
+    .stats-item-icon.accuracy,
+    .stats-item-icon.progress,
+    .stats-item-icon.speed{
+        font-size: 36px;
+    }
+}
+@media (max-width:551px){
+    .profile-header{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .user-name{
+        margin-bottom: 20px;
+    }
+    .stats-item-icon{
+        font-size: 28px;
+    }
+    .stats-item-descr span{
+        font-size: 18px;
+    }
+    .user-best-stats{
+        width: 400px;
+    }
+    .profile-levels-item, 
+    .profile-tests-item,
+    .profile-rating-item{
+        padding: 10px 5px;
+    }
+    .stat{
+        margin-bottom: 5px;
+    }
+    .level-stats-wrap{
+        flex-wrap: wrap;
+    }
+    .stats-wrap{
+        width: 220px;
+    }
+    .stats-item-icon.accuracy,
+    .stats-item-icon.progress,
+    .stats-item-icon.speed{
+        font-size: 34px;
+    }
+}
+@media (max-width:445px){
+    .user-best-stats{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .stats-item{
+        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .profile-nav-link{
+        padding: 10px;
+    }
+    .profile-tests-item,
+    .profile-rating-item{
+        display: block;
+    }
+    .user-test-info{
+        margin-bottom: 5px;
+    }
+    .rating-user-info{
+        margin-bottom: 5px;
+    }
+}

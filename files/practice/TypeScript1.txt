@@ -1,0 +1,1 @@
+try public document extends Required stopPropagation boolean if static Exclude race event never for return preventDefault Omit namespace Readonly null string finally Symbol interface Record instanceof declare false ReturnType type Partial Pick HTMLElement break this catch

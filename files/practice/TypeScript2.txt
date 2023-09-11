@@ -1,0 +1,1 @@
+const export Array fetch any then protected as function bigint Promise switch get removeEventLitener new Extract implements let abstract Parameters super namespace addEventListener time => set await Omit default while NonNullable private number enum typeof void class async Pick HTMLElement

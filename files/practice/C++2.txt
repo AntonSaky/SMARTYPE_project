@@ -1,0 +1,1 @@
+namespace enum inline private static_assert delete catch void nullptr thread_local vector virtual struct if else static using not extern asm consteval co_return false char16_t export default alignof friend goto constexpr bool signed mutable const switch try break

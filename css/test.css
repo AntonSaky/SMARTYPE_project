@@ -1,0 +1,213 @@
+.header-overlay{
+    width: 100%;
+    height: 420px;
+    background-color: #55c5ff;
+    position: absolute;
+    top: -95px;
+    left: 0;
+    z-index: -1;
+}
+.main-test{
+    background-color: #55c5ff;
+    position: relative;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.speed-img{
+    width: 600px;
+}
+.speed-img img{
+    width: 100%;
+    position: relative;
+    top: 4px;
+   
+}
+.main-test-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.start-test-wrap{
+    margin-left: -70px;
+}
+.main-test__title {
+    color: var(--color-white);
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: lighter;
+    width:330px
+}
+.main-test__description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 30px;
+    line-height: 125%;
+    width:430px
+}
+.main-test__btn {
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-white);
+    text-transform: uppercase;
+    display: inline-block;
+    width: 250px;
+    padding: 11px ;
+    background-color: var(--bg-link-active);
+    border: 3px solid #23b4fc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .15s ease;
+}
+.main-test__btn:hover{
+    background-color: #017bd2;
+}
+
+/* Section */
+.about-test {
+}
+.about-test-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.about-test-list-item {
+}
+.about-test-title, .start-test-title{
+    color: black;
+    width: 350px;
+    font-size: 26px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.about-test-descr, .start-test-desrc{
+    color: var(--color-black);
+    width: 400px;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
+.about-test-descr:last-child{
+    margin-bottom: 40px;
+}
+/* Section end */
+
+/* Start test section */
+.start-test{
+    
+    width: 100%;
+    text-align: center;
+    background-color: #55c5ff;
+    padding: 40px 0;
+    padding-bottom: 140px;
+}
+.start-test-title{
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(255, 255, 255); 
+    font-weight: lighter;
+}
+.start-test-descr{
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 350px;
+    color: rgba(255, 255, 255, 0.9);
+}
+/* Start test section end */
+
+/* FAQ section */
+.FAQ-section .FAQ{
+    margin-top: -100px;
+    margin-bottom: 0;
+    background-color: var(--color-white);
+    border-radius: 20px;
+    padding: 50px 20px;
+}
+.FAQ-section .FAQ-title{
+    font-size: 2em;
+}
+.FAQ-section .img{
+    width: 130px;
+    padding-top: 10px;
+}
+.FAQ-section .answer{
+    /* margin-bottom: 15px; */
+}
+.list{
+    margin-left: 20px;
+}
+.list-item{
+    color: var(--color-black);
+    font-size: 18px;
+    line-height: 140%;
+}
+/* FAQ Section end */
+
+@media screen and (max-width:901px){
+    .main-test-wrap, .about-test{
+        padding: 0 10px;
+    }
+    .main-test__title{
+        width: 270px;
+        font-size: 30px;
+    }
+    .main-test__description{
+        width: 300px;
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:851px) {
+    .FAQ-section .FAQ{
+        border-radius: 0px;
+    }
+}
+@media screen and (max-width:833px){
+    .about-test{
+        text-align: center;
+    }
+    .about-test-list{
+        display: inline-block;
+    }
+    .speed-img{
+        width: 400px;
+    }
+}
+@media screen and (max-width:601px){
+    .main-test__title{
+        font-size: 28px;
+    }
+    .main-test__description{
+        font-size: 14px;
+        line-height: 115%;
+    }
+    .main-test__btn{
+        margin-bottom: 30px;
+    }
+    .main-test-wrap{
+        flex-direction: column;
+    }
+    .speed-img{
+        margin-bottom: 20px;
+    }
+    .speed-img img{
+        top: 0;
+    }
+    .start-test-wrap{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:450px){
+    .about-test-title, .start-test-title{
+        width: 300px;
+    }
+    .about-test-descr, .start-test-descr{
+        width: 300px;
+    }
+    .speed-img{
+        width: 315px;
+    }
+}

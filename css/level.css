@@ -1,0 +1,123 @@
+.time-block{
+    background-color: var(--color-white);
+    width: 100px;
+    border: 4px solid rgb(237, 237, 237);
+    border-radius: 15px;
+    padding: 5px 10px 4px 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.stats {
+    display: flex;
+    margin: 20px auto 10px auto;
+    justify-content: space-between;
+    width: 500px;
+    
+}
+.stats-misses, .stats-speed, .stats-accuracy {
+    color: var(--color-white);
+    font-size: 18px;
+}
+.stats-misses span,
+.stats-speed span,
+.stats-accuracy span{
+    color: var(--color-white);
+    font-size: 24px;
+
+}   
+
+.level-text {
+    min-width: 767px;
+    width: 100%;
+    margin: 0px auto 40px auto;
+    padding: 10px 20px;
+    border: 4px solid rgb(237, 237, 237);
+    border-radius: 20px;
+    background-color: var(--color-white);
+    font-size: 30px;
+    
+}
+.level-text-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+}
+.text-invisible, .text-visible{
+    width: 50%;
+    height: 100%;
+}
+.text-invisible{
+    text-align: right;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.written-text{
+    color: rgb(195, 195, 195);
+    white-space: pre;
+    text-overflow: clip;
+    -o-text-overflow: clip;
+    -ms-text-overflow: clip;
+    /* display: flex; */
+}
+.written-text span{
+    white-space: pre;
+}
+
+.text-visible {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: pre;
+}
+
+.pacman {
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    background: #f2d648;
+    /* background-color: rgb(255, 70, 70); */
+    position: relative;
+}
+
+.pred{
+    background-color: rgb(255, 70, 70);
+}
+
+.pacman-eye {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 8px;
+    right: 15px;
+    background: var(--color-black);
+}
+
+.pacman-mouth {
+    background: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 53%, 50% 50%, 100% 47%);
+}
+
+.open{
+    clip-path: polygon(100% 85%, 50% 50%, 100% 15%);
+}
+.keyboards{
+    position: relative;
+}
+@media screen and (max-width:768px) {  
+    .stats, .level-text, .time-block{
+        display: none;
+    }
+    
+}
